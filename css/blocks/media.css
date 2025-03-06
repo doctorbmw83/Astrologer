@@ -1,0 +1,152 @@
+
+
+@media (max-width: 768px) {
+    .nav,
+    .nav__list {
+        display: none;
+        /* flex-direction: column;
+        padding: 12px; */
+    }
+
+    .hero {
+        background-image: url('./../../img/hero/hero.webp');
+    }
+
+    /* .hero__desc {
+        font-size: 16px;
+        margin-bottom: 46px;
+    } */
+
+    .hero__title {
+        max-width: 300px;
+        font-size: 60px;
+    }
+    
+
+    .process__title {
+        max-width: 300px;
+        font-size: 60px;
+    }
+
+    .questions__title {
+        font-size: 22px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .services,
+    .works,
+    .process,
+    .questions {
+        padding-top: 20px;
+    }
+
+    .timeline__title {
+        font-size: 14px;
+
+    }
+
+    .accordion-button {
+        font-size: 16px;
+    }
+
+    .questions__text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 450px) {
+    .process__header p {
+        font-size: 16px;
+        max-width: 300px;
+    }
+
+    .preference__title {
+        font-size: 22px;
+
+    }
+
+    .preference__text {
+        font-size: 16px;
+    }
+
+    .preference__item {
+        font-size: 16px;
+    }
+
+    .partners img {
+        max-width: 60px;
+    }
+
+    .servises__title {
+        font-size: 22px;
+    }
+
+    .service__title {
+        font-size: 18px;
+    }
+
+    .service {
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .works {
+        padding-top: 50px;
+    }
+
+    .works__title {
+        font-size: 22px;
+    }
+
+    .works__header {
+        max-width: 310px;
+        padding: 0 8px 8px;
+    }
+
+    .works__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .timeline__item-box {
+        padding: 27px 2px 2px 2px;
+    }
+
+    .process__title {
+        font-size: 32px;
+    }
+
+
+
+    .timeline__subtitle {
+        font-size: 13px;
+    }
+
+
+
+    .timeline__desc {
+        font-size: 12px;
+        margin-bottom: 5px;
+        text-align: balance;
+    }
+
+    .timeline__time {
+        top: 0;
+        right: 0;
+        padding: 3px;
+
+    }
+
+    .contacts__title {
+        font-size: 28px;
+    }
+
+    .messenger {
+        font-size: 18px;
+    }
+}

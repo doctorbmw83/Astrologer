@@ -1,0 +1,24 @@
+.partners {
+	padding: 60px 0;
+	background-image: url('./../../img/partners/bgBanner.png');
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.partners img{
+	max-width: 100px;
+}
+
+/* .visually-hidden {
+
+} */
+
+.partners__row {
+	margin: 0 auto;
+	max-width: 1200px;
+
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: space-around;
+	align-items: center;
+}

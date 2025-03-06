@@ -1,0 +1,229 @@
+.timeline {
+	padding-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+
+	--padding-before: 7.11%;
+	--padding: 24px;
+	--outline: 16px;
+
+	counter-reset: timeline-counter;
+}
+
+@media (max-width: 1319px) {
+	.timeline {
+		--padding-before: 4%;
+		--padding: 12px;
+		--outline: 8px;
+	}
+}
+
+.timeline__item {
+	counter-increment: timeline-counter;
+	position: relative;
+
+	width: 50%;
+	/* background-color: bisque; */
+}
+
+.timeline__item:nth-child(odd) .timeline__item-box {
+	margin-left: auto;
+	/* background-color: #36322d; */
+}
+
+.timeline__item + .timeline__item {
+	margin-top: calc(-1 * var(--padding));
+}
+
+/* Номер общий */
+.timeline__item::after {
+	outline: #0e0e0e solid var(--outline);
+
+	transform: translate(-50%, -50%);
+
+	/* content: "01"; */
+	content: '0' counter(timeline-counter);
+
+	border: 1px solid #36322d;
+	border-radius: 500px;
+	padding: 8px 0px;
+	padding-left: 1px;
+	width: 40px;
+	height: 40px;
+
+	backdrop-filter: blur(30px);
+	background: #191817;
+
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 160%;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	text-align: center;
+	color: var(--text-default);
+}
+
+/* Нечетные */
+.timeline__item:nth-child(odd) {
+	/* background-color: red; */
+	margin-left: auto;
+
+	padding-left: var(--padding-before);
+}
+
+/* Нечетные Линия */
+.timeline__item:nth-child(odd)::before {
+	content: '';
+
+	position: absolute;
+	top: 0;
+	left: 0px;
+	width: 1px;
+	height: 100%;
+	/* background-color: red; */
+	background: var(--border-default);
+}
+
+/* Нечетные Номер */
+.timeline__item:nth-child(odd)::after {
+	position: absolute;
+	left: 0px;
+	top: 50%;
+	z-index: 9;
+}
+
+/* Четные */
+.timeline__item:nth-child(even) {
+	/* background-color: green; */
+
+	padding-right: var(--padding-before);
+}
+
+/* Четные Линия */
+.timeline__item:nth-child(even)::before {
+	content: '';
+
+	position: absolute;
+	top: 0;
+	right: -1px;
+	width: 1px;
+	height: 100%;
+	/* background-color: green; */
+	background: var(--border-default);
+}
+
+/* Четные Номер */
+.timeline__item:nth-child(even)::after {
+	position: absolute;
+	right: -1px;
+	top: 50%;
+	z-index: 9;
+	transform: translate(50%, -50%);
+}
+
+/* Последний Линия */
+.timeline__item:last-child::before {
+	height: 50%;
+}
+
+/* ------------------------- BOX ------------------ */
+
+.timeline__item-box {
+	position: relative;
+
+	border: 1px solid var(--border-default);
+	border-radius: 2px;
+	padding: var(--padding);
+	/* width: 600px; */
+	/* width: 41.958%; */
+
+	backdrop-filter: blur(30px);
+	background: var(--background-muted);
+}
+
+.timeline__time {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+
+	border: 1px solid var(--border-default);
+	border-radius: 2px;
+	padding: 7px;
+	/* width: 68px; */
+	/* height: 30px; */
+
+	backdrop-filter: blur(30px);
+	background: var(--background-muted);
+
+	font-family: var(--second-family);
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 120%;
+	text-transform: uppercase;
+	color: var(--text-default);
+}
+
+.timeline__subtitle {
+	margin-bottom: 4px;
+
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 160%;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: var(--text-muted);
+}
+
+.timeline__title {
+	margin-bottom: 16px;
+
+	font-family: var(--font-family);
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 130%;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: var(--text-default);
+}
+
+.timeline__desc {
+	margin-bottom: 32px;
+
+	font-family: var(--second-family);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 180%;
+	color: var(--text-muted);
+}
+
+.timeline__steps {
+	display: grid;
+	gap: 16px;
+
+	font-family: var(--second-family);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 180%;
+	color: var(--text-default);
+}
+
+.timeline__steps-item {
+	position: relative;
+	padding-left: 20px;
+}
+
+.timeline__steps-item::before {
+	position: absolute;
+	left: 0;
+	top: 12px;
+
+	content: '';
+
+	display: block;
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	background-color: var(--text-default);
+}

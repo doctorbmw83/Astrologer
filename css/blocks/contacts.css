@@ -1,0 +1,67 @@
+/* contacts */
+.contacts {
+    padding: 80px 0;
+    background-image: url('./../../img/footer/bgFooter.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-color: var(--background-default); */
+    /* border-top-left-radius: 100px; */
+    /* color: #fff; */
+}
+
+.contacts__title {
+    margin-bottom: 65px;
+    font-size: 52px;
+    font-weight: 700;
+    text-align: center;
+    animation-duration: 1.5s;
+    animation-name: shadowContacts;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+
+@keyframes shadowContacts {
+    from {
+        text-shadow: 0 0 var(--background-primary);
+    }
+
+    to {
+        text-shadow: 20px 20px 10px var(--background-muted-2);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.messengers {
+    display: flex;
+    column-gap: 30px;
+    row-gap: 30px;
+    flex-wrap: wrap;
+}
+
+.messenger {
+    flex-grow: 1;
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+    padding: 46px 20px;
+    border-radius: 20px;
+    border: 1px solid #363636;
+    color: var(--text-default);
+    font-size: 20px;
+    transition: background-color .3s ease-in;
+}
+
+.messenger:hover {
+    background-color: #1E1E1E;
+}

@@ -1,0 +1,32 @@
+.works {
+	padding-top: 160px;
+}
+
+.works__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 0 32px 32px;
+}
+
+.works__title {
+	font-family: var(--font-family);
+	font-weight: 300;
+	font-size: 64px;
+	line-height: 110%;
+	color: var(--text-default);
+}
+
+.works__title span {
+	font-family: 'Gambetta', sans-serif;
+	font-style: italic;
+}
+
+
+
+.works__grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 32px;
+}

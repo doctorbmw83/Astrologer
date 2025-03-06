@@ -1,0 +1,22 @@
+.services {
+	padding-top: 80px;
+}
+.servises__title{
+	text-align: center;
+	padding: 36px 0;
+	font-size: 36px;
+}
+
+
+.services__row {
+	display: flex;
+	gap: 32px;
+	flex-wrap: wrap;
+
+	counter-reset: my-counter;
+}
+
+
+.services__row > * {
+	flex: 1;
+}

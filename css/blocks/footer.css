@@ -1,0 +1,20 @@
+/* .footer */
+.footer {
+    padding: 30px 0;
+    
+    background-color: #1e1e1e;
+    color: #5D5D5D;
+}
+
+.footer__inner {
+    font-size: 14px;
+    text-align: center;
+}
+
+.footer__inner p+p {
+    margin-top: 15px;
+}
+.footer__inner--link{
+    color: inherit;
+    
+}

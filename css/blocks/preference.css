@@ -1,0 +1,33 @@
+.preference {
+  padding: 50px 20px;
+  background-image: url("./../../img/preference/preference.png");
+  background-repeat: repeat;
+  background-position: center;
+}
+
+.preference__title {
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: 28px;
+}
+
+.preference__text {
+  padding-bottom: 30px;
+}
+
+.preference__subtitle {
+  padding-bottom: 30px;
+  font-size: 22px;
+}
+
+.preference__list {
+  margin-left: 40px;
+  padding-bottom: 30px;
+}
+
+.preference__item {
+  padding-bottom: 20px;
+}
+.preference__item span {
+  font-weight: 600;
+}
